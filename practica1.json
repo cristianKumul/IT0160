@@ -1,0 +1,83 @@
+{
+    "type": "database",
+    "name": "GENI",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "Usuarios",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE Usuarios (IdUsuario INT PRIMARY KEY DEFAULT (1), Nombre CHAR (15, 18), \"Apellido Paterno\" CHAR (15, 18), \"Apellido Materno\" CHAR (15, 18), UserName CHAR (15, 18), \"e-mail\" CHAR (30, 50))",
+            "columns": [
+                {
+                    "name": "IdUsuario",
+                    "type": "INT",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (1)"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nombre",
+                    "type": "CHAR (15, 18)"
+                },
+                {
+                    "name": "Apellido Paterno",
+                    "type": "CHAR (15, 18)"
+                },
+                {
+                    "name": "Apellido Materno",
+                    "type": "CHAR (15, 18)"
+                },
+                {
+                    "name": "UserName",
+                    "type": "CHAR (15, 18)"
+                },
+                {
+                    "name": "e-mail",
+                    "type": "CHAR (30, 50)"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Martha",
+                    "Guadalupe",
+                    "Golpez",
+                    "MarGG",
+                    "MarGG@gmail.com"
+                ],
+                [
+                    2,
+                    "Gabriela",
+                    "H.luz",
+                    "Silva",
+                    "GabHS",
+                    "GabHS@gmail.com"
+                ],
+                [
+                    3,
+                    "Julio",
+                    "Chan",
+                    "Lopez",
+                    "JulCL",
+                    "JulCL@gmail.com"
+                ],
+                [
+                    4,
+                    "Ivan",
+                    "Mora",
+                    "Gomez",
+                    "Ivaneg3",
+                    "Ivaneg3@gmail.com"
+                ]
+            ]
+        }
+    ]
+}
