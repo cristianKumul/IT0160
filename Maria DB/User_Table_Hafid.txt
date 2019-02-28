@@ -1,0 +1,30 @@
+CREATE DATABASE `Prueba` 
+
+SHOW DATABASES;
+
+USE `prueba`;
+
+CREATE TABLE `user` (
+	`cod_user` INT(10) NOT NULL AUTO_INCREMENT,
+	`user_name` VARCHAR(50) NOT NULL DEFAULT '0',
+	`password` VARCHAR(50) NOT NULL DEFAULT '0',
+	`mail` VARCHAR(50) NOT NULL DEFAULT '0',
+	`phone` VARCHAR(50) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`cod_user`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB;
+
+INSERT INTO `prueba`.`user` (`user_name`, `password`, `mail`, `phone`) 
+	VALUES ('Hafid Oxte', '12345', '140300042@ucaribe.edu.mx', '9981538039');
+
+INSERT INTO `prueba`.`user` (`user_name`, `password`, `mail`, `phone`) 
+	VALUES ('Melani Tolosa', '67891', 'escapetefate@gmail.com', '9991585956');
+
+INSERT INTO `prueba`.`user` (`user_name`, `password`, `mail`, `phone`) 
+	VALUES ('Fulatino', '123987', 'fulanito@gmail.com', '9987456354');
+
+INSERT INTO `prueba`.`user` (`user_name`) 
+	VALUES ('Meganito');
+
+UPDATE `prueba`.`user` SET `password`='589946', `mail`='meganito@gmail.com', `phone`='9874566321' WHERE  `cod_user`=4;
