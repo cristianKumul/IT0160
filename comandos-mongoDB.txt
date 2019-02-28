@@ -1,0 +1,22 @@
+
+>documento= { nombre: "juan", contraseña:123 , corrreo:"160300234@ucaribe.edu.mx" }
+>documento_dos= { nombre: "mario", contraseña:678 , corrreo:"150300789@ucaribe.edu.mx" }
+>documento_3= { nombre: "julio", contraseña: 456 , corrreo:"150300156@ucaribe.edu.mx" }
+>documento_4= { nombre: "oscar", contraseña: 923 , corrreo:"170300090@ucaribe.edu.mx" }
+
+>documento
+>documento_dos
+>documento_3
+>documento_4
+
+>use Users
+>db
+
+>db.usuarios.insert(documento )
+>db.usuarios.insert(documento_dos )
+>db.usuarios.insert(documento_3 )
+>db.usuarios.insert(documento_4 )
+>show collections
+
+>db.usuarios.find()
+>db.usuarios.find( {}, {nombre: 1, _id:0, corrreo: 1, contraseña:1 } )
